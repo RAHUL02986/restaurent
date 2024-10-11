@@ -1,0 +1,715 @@
+/* ===== Start ICONS CSS ===== */
+@font-face {
+    font-family: "fazfood-icon";
+    src: url("../fonts/fazfood-icon-1.0.4.eot");
+    src: url("../fonts/fazfood-icon-1.0.4d41d.eot?#iefix") format("eot"), url("../fonts/fazfood-icon-1.0.4.woff2") format("woff2"), url("../fonts/fazfood-icon-1.0.4.woff") format("woff"), url("../fonts/fazfood-icon-1.0.4.ttf") format("truetype"), url("../fonts/fazfood-icon-1.0.4.svg#fazfood-icon-1.0.4") format("svg");
+  }
+  [class*=fazfood-icon-] {
+    font-family: "fazfood-icon";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .fazfood-icon-address:before {
+    content: "";
+  }
+  
+  .fazfood-icon-arrow-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-beverages-1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-beverages:before {
+    content: "";
+  }
+  
+  .fazfood-icon-burger-2:before {
+    content: "";
+  }
+  
+  .fazfood-icon-burger:before {
+    content: "";
+  }
+  
+  .fazfood-icon-burrito:before {
+    content: "";
+  }
+  
+  .fazfood-icon-cart:before {
+    content: "";
+  }
+  
+  .fazfood-icon-clock:before {
+    content: "";
+  }
+  
+  .fazfood-icon-close-menu:before {
+    content: "";
+  }
+  
+  .fazfood-icon-combo:before {
+    content: "";
+  }
+  
+  .fazfood-icon-delivery-man:before {
+    content: "";
+  }
+  
+  .fazfood-icon-delivery-time:before {
+    content: "";
+  }
+  
+  .fazfood-icon-dinner-table:before {
+    content: "";
+  }
+  
+  .fazfood-icon-double-left:before {
+    content: "";
+  }
+  
+  .fazfood-icon-double-right:before {
+    content: "";
+  }
+  
+  .fazfood-icon-eye:before {
+    content: "";
+  }
+  
+  .fazfood-icon-fast-delivery:before {
+    content: "";
+  }
+  
+  .fazfood-icon-fast-food:before {
+    content: "";
+  }
+  
+  .fazfood-icon-food-donation:before {
+    content: "";
+  }
+  
+  .fazfood-icon-fries:before {
+    content: "";
+  }
+  
+  .fazfood-icon-grid1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-guarantee:before {
+    content: "";
+  }
+  
+  .fazfood-icon-list1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-location:before {
+    content: "";
+  }
+  
+  .fazfood-icon-meal:before {
+    content: "";
+  }
+  
+  .fazfood-icon-menu:before {
+    content: "";
+  }
+  
+  .fazfood-icon-motorbike:before {
+    content: "";
+  }
+  
+  .fazfood-icon-phone1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-phone2:before {
+    content: "";
+  }
+  
+  .fazfood-icon-pizza:before {
+    content: "";
+  }
+  
+  .fazfood-icon-popcorn:before {
+    content: "";
+  }
+  
+  .fazfood-icon-quote:before {
+    content: "";
+  }
+  
+  .fazfood-icon-recipes:before {
+    content: "";
+  }
+  
+  .fazfood-icon-salats:before {
+    content: "";
+  }
+  
+  .fazfood-icon-sandwich:before {
+    content: "";
+  }
+  
+  .fazfood-icon-search1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-shipment:before {
+    content: "";
+  }
+  
+  .fazfood-icon-side-orders:before {
+    content: "";
+  }
+  
+  .fazfood-icon-smartphone:before {
+    content: "";
+  }
+  
+  .fazfood-icon-spaghetti:before {
+    content: "";
+  }
+  
+  .fazfood-icon-specials:before {
+    content: "";
+  }
+  
+  .fazfood-icon-sushi:before {
+    content: "";
+  }
+  
+  .fazfood-icon-sync1:before {
+    content: "";
+  }
+  
+  .fazfood-icon-taco:before {
+    content: "";
+  }
+  
+  .fazfood-icon-tomato-sauce:before {
+    content: "";
+  }
+  
+  .fazfood-icon-tool:before {
+    content: "";
+  }
+  
+  .fazfood-icon-tracking:before {
+    content: "";
+  }
+  
+  .fazfood-icon-vespa:before {
+    content: "";
+  }
+  
+  .fazfood-icon-360:before {
+    content: "";
+  }
+  
+  .fazfood-icon-angle-down:before {
+    content: "";
+  }
+  
+  .fazfood-icon-angle-left:before {
+    content: "";
+  }
+  
+  .fazfood-icon-angle-right:before {
+    content: "";
+  }
+  
+  .fazfood-icon-angle-up:before {
+    content: "";
+  }
+  
+  .fazfood-icon-arrow-left:before {
+    content: "";
+  }
+  
+  .fazfood-icon-arrow-right:before {
+    content: "";
+  }
+  
+  .fazfood-icon-bars:before {
+    content: "";
+  }
+  
+  .fazfood-icon-cart-empty:before {
+    content: "";
+  }
+  
+  .fazfood-icon-check-square:before {
+    content: "";
+  }
+  
+  .fazfood-icon-check:before {
+    content: "";
+  }
+  
+  .fazfood-icon-circle:before {
+    content: "";
+  }
+  
+  .fazfood-icon-cloud-download-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-comment:before {
+    content: "";
+  }
+  
+  .fazfood-icon-comments:before {
+    content: "";
+  }
+  
+  .fazfood-icon-contact:before {
+    content: "";
+  }
+  
+  .fazfood-icon-copy:before {
+    content: "";
+  }
+  
+  .fazfood-icon-credit-card:before {
+    content: "";
+  }
+  
+  .fazfood-icon-dot-circle:before {
+    content: "";
+  }
+  
+  .fazfood-icon-edit:before {
+    content: "";
+  }
+  
+  .fazfood-icon-envelope:before {
+    content: "";
+  }
+  
+  .fazfood-icon-expand-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-expand:before {
+    content: "";
+  }
+  
+  .fazfood-icon-external-link-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-file-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-file-archive:before {
+    content: "";
+  }
+  
+  .fazfood-icon-folder-open:before {
+    content: "";
+  }
+  
+  .fazfood-icon-folder:before {
+    content: "";
+  }
+  
+  .fazfood-icon-frown:before {
+    content: "";
+  }
+  
+  .fazfood-icon-gift:before {
+    content: "";
+  }
+  
+  .fazfood-icon-grid:before {
+    content: "";
+  }
+  
+  .fazfood-icon-grip-horizontal:before {
+    content: "";
+  }
+  
+  .fazfood-icon-heart-fill:before {
+    content: "";
+  }
+  
+  .fazfood-icon-heart:before {
+    content: "";
+  }
+  
+  .fazfood-icon-history:before {
+    content: "";
+  }
+  
+  .fazfood-icon-home:before {
+    content: "";
+  }
+  
+  .fazfood-icon-info-circle:before {
+    content: "";
+  }
+  
+  .fazfood-icon-instagram:before {
+    content: "";
+  }
+  
+  .fazfood-icon-level-up-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-list:before {
+    content: "";
+  }
+  
+  .fazfood-icon-map-marker-check:before {
+    content: "";
+  }
+  
+  .fazfood-icon-meh:before {
+    content: "";
+  }
+  
+  .fazfood-icon-minus-circle:before {
+    content: "";
+  }
+  
+  .fazfood-icon-minus:before {
+    content: "";
+  }
+  
+  .fazfood-icon-mobile-android-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-money-bill:before {
+    content: "";
+  }
+  
+  .fazfood-icon-pencil-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-plus:before {
+    content: "";
+  }
+  
+  .fazfood-icon-random:before {
+    content: "";
+  }
+  
+  .fazfood-icon-reply-all:before {
+    content: "";
+  }
+  
+  .fazfood-icon-reply:before {
+    content: "";
+  }
+  
+  .fazfood-icon-search:before {
+    content: "";
+  }
+  
+  .fazfood-icon-shield-check:before {
+    content: "";
+  }
+  
+  .fazfood-icon-shopping-bag:before {
+    content: "";
+  }
+  
+  .fazfood-icon-shopping-basket:before {
+    content: "";
+  }
+  
+  .fazfood-icon-sign-out-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-smile:before {
+    content: "";
+  }
+  
+  .fazfood-icon-spinner:before {
+    content: "";
+  }
+  
+  .fazfood-icon-square:before {
+    content: "";
+  }
+  
+  .fazfood-icon-star:before {
+    content: "";
+  }
+  
+  .fazfood-icon-store:before {
+    content: "";
+  }
+  
+  .fazfood-icon-sync:before {
+    content: "";
+  }
+  
+  .fazfood-icon-tachometer-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-thumbtack:before {
+    content: "";
+  }
+  
+  .fazfood-icon-ticket:before {
+    content: "";
+  }
+  
+  .fazfood-icon-times-circle:before {
+    content: "";
+  }
+  
+  .fazfood-icon-times-square:before {
+    content: "";
+  }
+  
+  .fazfood-icon-times:before {
+    content: "";
+  }
+  
+  .fazfood-icon-trophy-alt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-truck:before {
+    content: "";
+  }
+  
+  .fazfood-icon-user:before {
+    content: "";
+  }
+  
+  .fazfood-icon-video:before {
+    content: "";
+  }
+  
+  .fazfood-icon-wishlist-empty:before {
+    content: "";
+  }
+  
+  .fazfood-icon-adobe:before {
+    content: "";
+  }
+  
+  .fazfood-icon-amazon:before {
+    content: "";
+  }
+  
+  .fazfood-icon-android:before {
+    content: "";
+  }
+  
+  .fazfood-icon-angular:before {
+    content: "";
+  }
+  
+  .fazfood-icon-apper:before {
+    content: "";
+  }
+  
+  .fazfood-icon-apple:before {
+    content: "";
+  }
+  
+  .fazfood-icon-atlassian:before {
+    content: "";
+  }
+  
+  .fazfood-icon-behance:before {
+    content: "";
+  }
+  
+  .fazfood-icon-bitbucket:before {
+    content: "";
+  }
+  
+  .fazfood-icon-bitcoin:before {
+    content: "";
+  }
+  
+  .fazfood-icon-bity:before {
+    content: "";
+  }
+  
+  .fazfood-icon-bluetooth:before {
+    content: "";
+  }
+  
+  .fazfood-icon-btc:before {
+    content: "";
+  }
+  
+  .fazfood-icon-centos:before {
+    content: "";
+  }
+  
+  .fazfood-icon-chrome:before {
+    content: "";
+  }
+  
+  .fazfood-icon-codepen:before {
+    content: "";
+  }
+  
+  .fazfood-icon-cpanel:before {
+    content: "";
+  }
+  
+  .fazfood-icon-discord:before {
+    content: "";
+  }
+  
+  .fazfood-icon-dochub:before {
+    content: "";
+  }
+  
+  .fazfood-icon-docker:before {
+    content: "";
+  }
+  
+  .fazfood-icon-dribbble:before {
+    content: "";
+  }
+  
+  .fazfood-icon-dropbox:before {
+    content: "";
+  }
+  
+  .fazfood-icon-drupal:before {
+    content: "";
+  }
+  
+  .fazfood-icon-ebay:before {
+    content: "";
+  }
+  
+  .fazfood-icon-facebook-f:before {
+    content: "";
+  }
+  
+  .fazfood-icon-facebook:before {
+    content: "";
+  }
+  
+  .fazfood-icon-figma:before {
+    content: "";
+  }
+  
+  .fazfood-icon-firefox:before {
+    content: "";
+  }
+  
+  .fazfood-icon-google-plus:before {
+    content: "";
+  }
+  
+  .fazfood-icon-google:before {
+    content: "";
+  }
+  
+  .fazfood-icon-grunt:before {
+    content: "";
+  }
+  
+  .fazfood-icon-gulp:before {
+    content: "";
+  }
+  
+  .fazfood-icon-html5:before {
+    content: "";
+  }
+  
+  .fazfood-icon-joomla:before {
+    content: "";
+  }
+  
+  .fazfood-icon-link-brand:before {
+    content: "";
+  }
+  
+  .fazfood-icon-linkedin:before {
+    content: "";
+  }
+  
+  .fazfood-icon-mailchimp:before {
+    content: "";
+  }
+  
+  .fazfood-icon-opencart:before {
+    content: "";
+  }
+  
+  .fazfood-icon-paypal:before {
+    content: "";
+  }
+  
+  .fazfood-icon-pinterest-p:before {
+    content: "";
+  }
+  
+  .fazfood-icon-reddit:before {
+    content: "";
+  }
+  
+  .fazfood-icon-skype:before {
+    content: "";
+  }
+  
+  .fazfood-icon-slack:before {
+    content: "";
+  }
+  
+  .fazfood-icon-snapchat:before {
+    content: "";
+  }
+  
+  .fazfood-icon-spotify:before {
+    content: "";
+  }
+  
+  .fazfood-icon-trello:before {
+    content: "";
+  }
+  
+  .fazfood-icon-twitter:before {
+    content: "";
+  }
+  
+  .fazfood-icon-vimeo:before {
+    content: "";
+  }
+  
+  .fazfood-icon-whatsapp:before {
+    content: "";
+  }
+  
+  .fazfood-icon-wordpress:before {
+    content: "";
+  }
+  
+  .fazfood-icon-yoast:before {
+    content: "";
+  }
+  
+  .fazfood-icon-youtube:before {
+    content: "";
+  }
+  
+  /* ===== End ICONS CSS ===== */

@@ -1,0 +1,71 @@
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.sticky-slider-container {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.1s ease;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slide {
+    min-width: 300px; /* Adjust based on image size */
+    margin: 0 10px; /* Spacing between slides */
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.content {
+    padding: 20px;
+    background: #f0f0f0;
+}
