@@ -254,6 +254,193 @@ button.prime_bg {
 
 
 
+
+    
+
+
+
+
+
+    .navbars {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-buttons {
+    background: none;
+    border: none;
+    color: rgb(96, 77, 77);
+    padding: 15px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    font-weight: 600;
+    outline: none;
+}
+
+.nav-buttons.active {
+    color: #ffcc00;
+}
+
+.nav-buttons::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffcc00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.nav-buttons.active::after {
+    transform: scaleX(1);
+}
+
+.content {
+    display: none;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sections {
+    display: none;
+}
+
+.sections.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+.sticky-sections{
+    width: 100vw;
+    padding: 30px 100px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+  }
+  
+  .sticky-sections div p{
+   line-height: 20px;
+  }
+  .sticky-sections div span{
+    padding: 30px;
+  }
+  .sticky-box{
+    border-radius: 20px;   
+    top: 80px;
+    position: sticky;
+    height: 550px;
+    
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.navbars {
+    display: flex;
+    justify-content: left;
+    padding: 10px 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtns {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.sections {
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sections h2 {
+    margin: 0 0 20px 0;
+}
+
+
         </style>
 <style type="text/css">
     .display-time-board {
@@ -544,66 +731,558 @@ button.prime_bg {
     </div>
   </nav>
 </header>
-<div class="modal new-connection-model" id="new-connection">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">d</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <!-- Modal body -->
-      <div class="modal-body">
-      <form action="https://www.karvi.live/FuctionAction" id="connectionForm" method="post" enctype="multipart/form-data">
-     <input type="hidden"  name="ActionCall" value="CustomerLoginAccess" />
-          <div class="form-group">
-            <label for="connectionForm-username">v</label>
-            <div class="input-icon"> <i class="fa-lg fa-fw icofont-envelope icon"></i>
-             <input type="email" required  maxlength="255" class="form-control form-control-xl"  autocomplete="off" name="user_email" id="user_email" >
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="connectionForm-password">c</label>
-            <div class="input-icon"> <i class="fa-lg fa-fw icofont-ui-lock icon"></i>
-            <input type="password" required  maxlength="16" class="form-control form-control-x"  autocomplete="off" name="user_pass" id="user_pass" title="">
-            </div>
-          </div>
-          <div class="my-3"> <a href="account/forgot/index.html" id="connectionFormPasswordForgotten" class="connectionFormPasswordForgotten">f</a> </div>
-          <div class="form-group">
-            <button class="btn btn-secondary btn-block btn-xl" type="submit">r</button>
-          </div>
-        </form>
-        <p class="mt-4 mb-1">Don't have an account yet?</p>
-        <p><a href="account/register/index.html" id="" class="connectionFormRegister">g</a> and place your first order.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" id="loin_pop_head">
-        
-        <h5 class="modal-title position-relative text-white w-100" id="exampleModalLabel">
-                    <i class="bg-secondary fa fa-2x fa-user p-3 rounded-circle shadow pro-pic"></i>
-                    <span class="modal_title">d</span> <br>
-          <small class="view-profile">f</small></h5>
-      </div>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-      <div class="modal-body" id="login_pop_body">
-        <div class="my_account_box">
-                    <div class="login-btn"> <a href="account/login/index.html" class="btn btn-common">Log In</a> <a href="account/register/index.html" class="btn btn-common">Create Account </a> </div>
-                    <div class="clearfix"></div>
-          <div class="list-group">
-                        <a href="account/login/index.html" class="list-group-item list-group-item-action"> <i class="fa fa-shopping-bag mr-2"></i> w </a> <a href="account/login/index.html" class="list-group-item list-group-item-action"><i class="fa fa-heart mr-2"></i> Savings</a> <a href="account/login/index.html" class="list-group-item list-group-item-action"><i class="fa fa-star mr-2"></i> g</a> <a href="account/login/index.html" class="list-group-item list-group-item-action"><i class="icofont-ticket mr-2"></i> s</a> <a href="account/login/index.html" class="list-group-item list-group-item-action"><i class="fa fa-info-circle mr-2"></i> s</a>
-                      </div>
+<section>
+  <nav class="navbars">
+    <button class="nav-buttons border-" onclick="openSection('overview')">
+      Overview
+    </button>
+    <button class="nav-buttons border-0" onclick="openSection('order')">
+      Order Online
+    </button>
+    <button class="nav-buttons outline-0" onclick="openSection('review')">Review</button>
+    <button class="nav-buttons outline-0" onclick="openSection('menu')">Menu</button>
+  </nav>
+  <hr style="margin-top: -8px;">
+
+  <div id="content" class="content">
+    <div id="overview" class="sections">
+      <div class="row my-5">
+        <div class="col-8 p-5">
+          <h2 style="font-size: 28px">About This Place</h2>
+          <div class="d-flex justify-content-between py-3">
+            <h4>Menu</h4>
+            <a href="#"> All Menus <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="w-50 py-3">
+            <img
+              class="img-fluid w-75 rounded"
+              src="./images/menu-img.jpg"
+              alt=""
+            />
+            <h4 class="py-2">delivery Menu</h4>
+            <span>3 pages</span>
+          </div>
+          <div>
+            <h3 class="py-2">Cuisines</h3>
+            <div class="d-flex">
+              <button
+                class="btn btn-0 border rounded-pill text-info py-2 px-3"
+              >
+                North Indian
+              </button>
+              <button
+                class="btn btn-0 border mx-5 rounded-pill text-info py-2 px-3"
+              >
+                Chaines
+              </button>
+            </div>
+          </div>
+
+          <article class="py-3">
+            <h3>Average Cost</h3>
+            <h5>₹200 for one order (approx.)</h5>
+            <p>Exclusive of applicable taxes and charges, if any</p>
+          </article>
+          <article class="py-3">
+            <h3>More Info</h3>
+            <div class="d-flex justify-content-between w-50">
+              <p class="">
+                <i class="fa-regular fa-circle-check text-info"></i> Breakfast
+              </p>
+              <p class="px-5">
+                <i class="fa-regular fa-circle-check text-info"></i> Delivery
+                Only
+              </p>
+            </div>
+            <p>
+              <i class="fa-regular fa-circle-xmark text-danger"></i> No
+              Seating Avilable
+            </p>
+          </article>
+
+          <h2>OUR SPONSERS</h2>
+
+          <section class="row">
+            <div class="col-6 py-3">
+              <img
+                class="rounded w-100 h-50"
+                src="./images/1stt.jpg"
+                alt=""
+              />
+              <h3>Burgur</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>Asian, Chaines</h6>
+            </div>
+            <div class="col-6 py-3">
+              <img class="rounded w-100 h-50" src="./images/2nd.jpg" alt="" />
+              <h3>kaffe - Mast Hai</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.1<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  3.9<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>Cafe, Pasta, Burger, Sandwich, Pizza, Wraps, Desserts,</h6>
+            </div>
+          </section>
+
+          <section
+            class="py-2 px-5 rounded"
+            style="background-color: rgb(225, 222, 222)"
+           >
+            <h3>Are You Food Bloger?</h3>
+            <p class="text-danger">Add a Zomato spoonback to your blog.</p>
+          </section>
+          <h2>OUR SPONSERS</h2>
+
+          <section class="row py-5">
+            <div class="col-6 h-50 pt-3">
+              <img class="rounded w-100 h-50" src="./images/1.jpg" alt="" />
+              <h3>Cucina Restaurant</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.5<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>Chinese, Continental, North Indian, Biryani, Pasta, Pi</h6>
+            </div>
+            <div class="col-6 h-50 pt-3">
+              <img class="rounded w-100 h-50" src="./images/2.jpg" alt="" />
+              <h3>Pizza Don Uno</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.1<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  3.9<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>Pizza, Continental, Italian, Chinese, Arabian</h6>
+            </div>
+            <div class="col-6 h-50 py-1">
+              <img
+                class="rounded w-100 h-50"
+                src="./images/caffe.jpg"
+                alt=""
+              />
+              <h3>Caffix - The Tech Cafe</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  3.9<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  3.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>Cafe, Pizza, North Indian, Biryani, Chinese, Mexican,</h6>
+            </div>
+            <div class="col-6 h-50 py-1">
+              <img
+                class="rounded w-100 h-50"
+                src="./images/aura.jpg"
+                alt=""
+              />
+              <h3>Fashiontv Cafe</h3>
+              <div class="d-flex align-items-center">
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DINNIG |</p>
+                <span
+                  style="
+                    border-radius: 10px;
+                    background-color: rgb(71, 71, 164);
+                  "
+                  class="text-white py-2 px-3"
+                >
+                  4.2<i class="fa-regular fa-star"></i>
+                </span>
+                <p class="mx-3 pt-3">DELIVERY</p>
+              </div>
+              <h6>North Indian, Italian, Mexican, Chinese, Beverages</h6>
+            </div>
+          </section>
+
+          <section>
+            <h2 style="word-spacing: 5px; font-weight: 400">
+              HELP US MAKE OUR RESTAURENT BETTER
+            </h2>
+            <h2>Report an error in this listing</h2>
+            <p>Help us make Zomato more updated and relevant for everyone</p>
+            <a class="text-danger" style="font-size: 16px" href="#">
+              Report Know</a
+            >
+
+            <h4 class="pt-5">Related to Food History, Navrangpura</h4>
+            <p>
+              Restaurants in Ahmedabad, Ahmedabad Restaurants, Navrangpura
+              restaurants, Best Navrangpura restaurants, West Ahmedabad
+              restaurants, Order food online in Navrangpura, Order food online
+              in Ahmedabad, Order food online in West Ahmedabad, New Year
+              Parties in Ahmedabad, Christmas' Special in Ahmedabad
+            </p>
+            <h4 class="pt-5">Restaurants around Navrangpura</h4>
+            <p>
+              Ashram Road restaurants, C G Road restaurants, Gulbai Tekra
+              restaurants, Ellis Bridge restaurants
+            </p>
+            <h4 class="pt-5">Frequent searches leading to this page</h4>
+            <p>
+              food history menu, food history navrangpura menu, food history
+              ahmedabad, food history ahmedabad menu, food history restaurant
+            </p>
+          </section>
         </div>
-        <div class="clear"></div>
+
+        <div class="sticky-box col-4 p-5 shadow">
+          <h3>Call</h3>
+          <h4 class="text-danger my-3">+1 54653-54674</h4>
+          <h3>Direction</h3>
+          <div class="rounded">
+            <iframe
+              width="100%"
+              height="250px"
+              frameborder="0"
+              style="border: 0"
+              src="https://maps.google.it/maps?&amp;q=Bad%20Friedrichshall%20strase&amp;output=embed"
+              allowfullscreen
+            >
+            </iframe>
+            <h4>
+              5 & 6, HSG House, Vijay Cross Road, Navrangpura, Ahmedabad
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
+    <div id="order" class="sections">
+      <div class="container-fluid">
+        <aside class="sidebar">
+          <ul>
+            <li>
+              <a href="#soups" onclick="activateLink('soups')"
+                >Soups & Salads</a
+              >
+            </li>
+            <li>
+              <a href="#starters" onclick="activateLink('starters')"
+                >Starters</a
+              >
+            </li>
+            <li>
+              <a href="#main-course" onclick="activateLink('main-course')"
+                >Main Course</a
+              >
+            </li>
+            <li>
+              <a href="#bread" onclick="activateLink('bread')"
+                >Bread & Rice</a
+              >
+            </li>
+            <li>
+              <a href="#biryani" onclick="activateLink('biryani')"
+                >Biryani & Fried Rice</a
+              >
+            </li>
+            <li>
+              <a href="#snacks" onclick="activateLink('snacks')">Snacks</a>
+            </li>
+          </ul>
+        </aside>
+
+        <main class="main-content">
+          <section id="soups">
+            <h2>Order Online</h2>
+            <h6 class="text-danger">Currently closed for online ordering</h6>
+            <p><i class="fa-regular fa-compass"></i> Live track your order</p>
+            <h2>Soups & Salads</h2>
+
+            <h3>SOUPS</h3>
+
+            <h5 class="pt-3">Mexican Chilli Bean Soup</h5>
+            <p>₹120</p>
+            <h5 class="pt-3">Tomato and Basil Soup</h5>
+            <p>₹165</p>
+            <h5 class="pt-3">Tomato and Basil Soup</h5>
+            <p>₹165</p>
+            <h5 class="pt-3">Hot and Sour Soup</h5>
+            <p>₹125</p>
+            <h5 class="pt-3">Mexican Salad</h5>
+            <p>₹145</p>
+            <h5 class="pt-3">Hot and Grilled Vegetable Salad</h5>
+            <p>₹175</p>
+          </section>
+
+          <section id="starters">
+            <h2>Starters</h2>
+            <h5 class="pt-3">Chilli Paneer Dry</h5>
+            <p>₹230</p>
+            <h5 class="pt-3">Manchurian Dry</h5>
+            <p>₹210</p>
+            <h5 class="pt-3">Veg Lolipop</h5>
+            <p>₹210</p>
+          </section>
+
+          <section id="main-course">
+            <h2>Main Course</h2>
+            <h5 class="pt-3">Paneer Butter Masala</h5>
+            <p>₹195</p>
+            <h5 class="pt-3">Paneer Bhurji</h5>
+            <p>₹205</p>
+            <h5 class="pt-3">Palak Paneer</h5>
+            <p>₹205</p>
+            <h5 class="pt-3">Corn Paneer</h5>
+            <p>₹205</p>
+            <h5 class="pt-3">Paneer Tikka Masala</h5>
+            <p>₹170</p>
+            <h5 class="pt-3">Mixed Vegetable</h5>
+            <p>₹175</p>
+          </section>
+
+          <section id="bread">
+            <h2>Bread & Rice</h2>
+            <h5 class="pt-3">Spinach Paratha</h5>
+            <p>₹120</p>
+            <p>Served with curd.</p>
+            <h5 class="pt-3">Aloo Paratha</h5>
+            <p>₹110</p>
+            <p>Served with curd.</p>
+          </section>
+          
+        
+      
+          <section id="biryani">
+            <h2>Biryani & Fried Rice</h2>
+            <h5 class="pt-3"> <h5 class="pt-3">Spinach Paratha</h5>
+            <p>₹180</p>
+            <h5 class="pt-3">Aloo Paratha</h5>
+            <p>₹110</p>
+            <h5>            Veg Pulao
+            </h5>
+            <p>₹135</p>
+            <p>Served with curd.</p>
+            <h5 class="pt-3">chicken Rice</h5>
+            <p>₹180</p>
+            <p>Served with curd.</p>  
+          </section>
+
+          <section id="snacks">
+            <h2>Snacks</h2>
+            <h5 class="pt-3">Tax Max Nachos
+            </h5>
+            <p>₹195</p>
+            <h5 class="pt-3">Simple Cheese Nachos
+            </h5>
+            <p>₹205</p>
+            <h5 class="pt-3">Peri Peri French Fries
+            </h5>
+            <p>₹155</p>
+            <h5 class="pt-3">Masala French Fries
+            </h5>
+            <p>₹205</p>
+            <h5 class="pt-3">Cheese Balls
+            </h5>
+            <p>₹170</p>
+            
+           </section>
+           <h4 class="pt-5">Related to Food History, Navrangpura</h4>
+           <p>
+             Restaurants in Ahmedabad, Ahmedabad Restaurants, Navrangpura
+             restaurants, Best Navrangpura restaurants, West Ahmedabad
+             restaurants, Order food online in Navrangpura, Order food online
+             in Ahmedabad, Order food online in West Ahmedabad, New Year
+             Parties in Ahmedabad, Christmas' Special in Ahmedabad
+           </p>
+           <h4 class="pt-5">Restaurants around Navrangpura</h4>
+           <p>
+             Ashram Road restaurants, C G Road restaurants, Gulbai Tekra
+             restaurants, Ellis Bridge restaurants
+           </p>
+           <h4 class="pt-5">Frequent searches leading to this page</h4>
+           <p>
+             food history menu, food history navrangpura menu, food history
+             ahmedabad, food history ahmedabad menu, food history restaurant
+           </p>
+           
+        </main>
+        
+      </div>
+    </div>
+    <div id="review" class="sections">
+      <h2>Food History Review</h2>
+      <nav class="navbars d-flex justify-content-between ">
+        <div class="dropdown ">
+          <button class="dropbtns" onclick="toggleDropdown('dropdown1')">
+            Popular
+          </button>
+          <div id="dropdown1" class="dropdown-content">
+            <a href="#">All Received</a>
+            <a href="#">Popular</a>
+            <a href="#">Following </a>
+            <a href="#">My Reviews</a>
+            <a href="#">Blogger</a>
+          </div>
+        </div>
+
+        <div class="dropdown ">
+          <button class="dropbtns
+          " onclick="toggleDropdown('dropdown2')">
+            Newest First
+          </button>
+          <div id="dropdown2" class="dropdown-content">
+            <a href="#">Newest First</a>
+            <a href="#">Oldest First</a>
+            <a href="#">Highest Rated</a>
+            <a href="#">Lowest Rated</a>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center">
+        <img class="w-50" src="./images/rep.jpg" alt="" />
+      </div>
+
+      <h4 class="pt-5">Related to Food History, Navrangpura</h4>
+      <p>
+        Restaurants in Ahmedabad, Ahmedabad Restaurants, Navrangpura
+        restaurants, Best Navrangpura restaurants, West Ahmedabad restaurants,
+        Order food online in Navrangpura, Order food online in Ahmedabad,
+        Order food online in West Ahmedabad, New Year Parties in Ahmedabad,
+        Christmas' Special in Ahmedabad
+      </p>
+      <h4 class="pt-5">Restaurants around Navrangpura</h4>
+      <p>
+        Ashram Road restaurants, C G Road restaurants, Gulbai Tekra
+        restaurants, Ellis Bridge restaurants
+      </p>
+      <h4 class="pt-5">Frequent searches leading to this page</h4>
+      <p>
+        food history menu, food history navrangpura menu, food history
+        ahmedabad, food history ahmedabad menu, food history restaurant
+      </p>
+    </div>
+    <div id="menu" class="sections">
+      <h2>Food History Menu</h2>
+      <div class="w-25 py-3">
+        <img
+          class="img-fluid w-75 rounded"
+          src="./images/menu-img.jpg"
+          alt=""
+        />
+        <h4 class="py-2">delivery Menu</h4>
+        <span>3 pages</span>
+      </div>
+      <h4 class="pt-5">Related to Food History, Navrangpura</h4>
+      <p>
+        Restaurants in Ahmedabad, Ahmedabad Restaurants, Navrangpura
+        restaurants, Best Navrangpura restaurants, West Ahmedabad restaurants,
+        Order food online in Navrangpura, Order food online in Ahmedabad,
+        Order food online in West Ahmedabad, New Year Parties in Ahmedabad,
+        Christmas' Special in Ahmedabad
+      </p>
+      <h4 class="pt-5">Restaurants around Navrangpura</h4>
+      <p>
+        Ashram Road restaurants, C G Road restaurants, Gulbai Tekra
+        restaurants, Ellis Bridge restaurants
+      </p>
+      <h4 class="pt-5">Frequent searches leading to this page</h4>
+      <p>
+        food history menu, food history navrangpura menu, food history
+        ahmedabad, food history ahmedabad menu, food history restaurant
+      </p>
+    </div>
   </div>
-</div>
+</section>
+
+
 
 
  <script>
@@ -623,34 +1302,9 @@ $('.burger, .overlay').click(function(){
   $('.leftmenubar').toggleClass('show');
   $('body').toggleClass('overflow');
 });
-</script><section class="header-stirpt">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="hero-heading">w</h1>
-        <p class="hero-sub-heading">v</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="matrl-about-section section-padding bg-gray">
-  <div class="container">
-    <div class="row">
-      <div id="right-side-box" class="col-md-9 col-lg-9 col-xl-9 wow animated fadeInUp" data-wow-delay=".3s">
-        <div class="restaurants-list-box my-order-page bg-white  p-4">
-          <h4 class="font-weight-bold mb-lg-3 d-none d-md-block">Order History </h4>
- <div class="restaurants-list p-2 animated fadeInUp wow" data-wow-delay=".2s">
-<div class="row">
-<div class="col-md-12 order_block clearfix" style="text-align:center;"><strong style="color:#9F0000; font-size:14px;">d</strong>
-                      <p>f</p>
-                      </div></div></div>
-                                
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div id="footer"></div>
+</script>
+
+<!-- <div id="footer"></div> -->
 <!-- Floating Social Media bar Starts -->
 <div class="float-sm float-social">
    
@@ -658,6 +1312,88 @@ $('.burger, .overlay').click(function(){
   
  <!-- <div class="fl-fl float-offer"> <img class="fa" src="https://www.karvi.live/assets/images/percentage.png"> <a href="" target="_blank">Today 20% Offer</a> </div>-->
 </div>
+<script>
+  function openSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.sections');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // Remove active class from all buttons
+    const buttons = document.querySelectorAll('.nav-buttons');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show the clicked section
+    document.getElementById(sectionId).classList.add('active');
+
+    // Add active class to the clicked button
+    const activeButton = Array.from(buttons).find(button => button.textContent.toLowerCase() === sectionId);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
+
+    // Show content area
+    document.querySelector('.content').style.display = 'block';
+}
+
+// Optionally, open the first section by default
+document.addEventListener('DOMContentLoaded', () => {
+    openSection('overview');
+});
+
+function toggleDropdown(dropdownId) {
+    // Close other dropdowns
+    const dropdowns = document.querySelectorAll('.dropdown-content');
+    dropdowns.forEach(dropdown => {
+        if (dropdown.id !== dropdownId) {
+            dropdown.classList.remove('show');
+        }
+    });
+
+    // Toggle the selected dropdown
+    document.getElementById(dropdownId).classList.toggle('show');
+}
+
+// Close dropdown if user clicks outside
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtns')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('show');
+        });
+    }
+}
+
+function activateLink(sectionId) {
+    // Remove active class from all links
+    const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Add active class to the clicked link
+    const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+}
+
+// Highlight sidebar links based on scroll position
+document.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('sections');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+            activateLink(section.id);
+        }
+    });
+});
+
+
+</script>
 <script>
         $(document).on('keyup','.onlyalpha',function(){
                 if (this.value.match(/[^a-zA-Z ]/g)) {
